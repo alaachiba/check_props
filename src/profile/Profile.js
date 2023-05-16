@@ -1,7 +1,8 @@
 import React from "react";
+import profileImage from "./alaa.png";
 
 
-const Profile = ({ fullName, bio, profession, handleName }) => {
+const Profile = ({ fullName, bio, profession, children, handleName }) => {
   const profileStyle = {
     backgroundColor: "#f2f2f2",
     padding: "20px",
@@ -21,6 +22,7 @@ const Profile = ({ fullName, bio, profession, handleName }) => {
 
   return (
     <div style={profileStyle}>
+    <img src={children} alt="Profile" height={150} width={150} style={{borderRadius: 100}}/>
       <h2>{fullName}</h2>
       <p>{bio}</p>
       <p>{profession}</p>

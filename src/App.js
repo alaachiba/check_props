@@ -1,5 +1,6 @@
 import './App.css';
 import Profile from './profile/Profile';
+import profileImage from "./profile/alaa.png";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       profession={"Full Stack Developer"}
       handleName={handleName}
     >
+       {profileImage}
     </Profile>
   </div>
   );
